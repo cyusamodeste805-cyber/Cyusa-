@@ -1,25 +1,89 @@
-<div class="box">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment</title>
 
-<h2>Activation Payment</h2>
+<style>
+body {
+  font-family: Arial;
+  background: #eeeeee;
+}
 
-<p><b>WASOJE KWIYANDIKISHA!</b></p>
+.payment-box {
+  width: 90%;
+  max-width: 420px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ccc;
+}
 
-<p>
-Usigaje kwishyura amafaranga ya activation kugira ngo konti yawe ibe active.
-</p>
+h2 {
+  margin-bottom: 20px;
+}
 
-<h3>Activation Fee: 3,900 FRW</h3>
+.code {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-<p>
-Kwishyura:
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 12px 35px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="payment-box">
+
+<h2>PAYMENT METHODS</h2>
+
+<p>Shyura ukoresheje MTN Mobile Money</p>
+
+<div class="code">
+*182*8*1*2160613*3900#
+</div>
+
+<br>
+
+<p><b>NAME:</b><br>
+Super Viser Patrick</p>
+
+<hr>
+
+<h3>Confirm Payment</h3>
+
+<input type="text" placeholder="Amazina yawe">
+
+<input type="tel" placeholder="Numero ya telefone">
+
+<input type="text" placeholder="Transaction ID">
+
 <br><br>
-<b>*182*8*1*2160613#</b>
-</p>
 
-<p>
-Amount: <b>3900 FRW</b>
-</p>
+<button>CONFIRM PAYMENT</button>
 
-<p>
-Super Viser: <b>Patrick</b>
-</p>
+</div>
+
+</body>
+</html>
