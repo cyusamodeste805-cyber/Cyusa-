@@ -1,120 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Travorium - Travorium Registration</title>
+<title>Travorium Register</title>
 
 <style>
-body{
-    font-family:Arial,sans-serif;
-    background:#f4f4f4;
-    margin:0;
-    padding:0;
+body {
+  font-family: Arial;
+  background: #f2f2f2;
 }
 
-.container{
-    max-width:450px;
-    margin:40px auto;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
+.register-box {
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
 }
 
-h1{
-    text-align:center;
-    color:#0066cc;
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 8px;
 }
 
-h2{
-    text-align:center;
-    color:#333;
-}
-
-input,select{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
-
-button{
-    width:100%;
-    padding:12px;
-    background:#0066cc;
-    color:white;
-    border:none;
-    border-radius:5px;
-    font-size:16px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#004c99;
-}
-
-.payment{
-    margin-top:20px;
-    padding:15px;
-    background:#eef6ff;
-    border-radius:8px;
-    text-align:center;
-}
-
-.payment h3{
-    color:#0066cc;
-}
-
-.footer{
-    text-align:center;
-    margin-top:20px;
-    color:#777;
+button {
+  padding: 12px 30px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 </style>
 
 </head>
+
 <body>
 
-<div class="container">
+<div class="register-box">
 
-<h1>Travorium</h1>
-<h2>Travorium Registration Form</h2>
+<h2>TRAVORIUM REGISTER</h2>
 
-<form>
+<input type="text" placeholder="Amazina yawe">
 
-<input type="text" placeholder="Full Name" required>
+<input type="tel" placeholder="Numero ya telefone">
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" placeholder="Email">
 
-<input type="tel" placeholder="Phone Number" required>
+<input type="password" placeholder="Password">
 
-<input type="text" placeholder="Country" required>
+<input type="password" placeholder="Confirm Password">
 
-<button type="submit">Register</button>
+<br>
 
-</form>
-
-<div class="payment">
-
-<h3>Payment Information</h3>
-
-<p><strong>Registration Fee:</strong> 3900 RWF</p>
-
-<p><strong>MTN MoMo Code:</strong> *182*8*1*2160613#</p>
-
-<p><strong>Account Name:</strong> Patrick</p>
-
-<p>Please complete the payment after registration.</p>
+<button onclick="goPayment()">REGISTER</button>
 
 </div>
 
-<div class="footer">
-© 2026 - Travorium
-</div>
 
-</div>
+<script>
+function goPayment(){
+  window.location.href="payment.html";
+}
+</script>
 
 </body>
 </html>
+  
