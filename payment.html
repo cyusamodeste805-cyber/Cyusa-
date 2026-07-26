@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!DOCTYPE html>
 <html>
 <head>
 <title>Payment</title>
@@ -81,9 +81,15 @@ Super Viser Patrick</p>
 
 <br><br>
 
-<button>CONFIRM PAYMENT</button>
 
 </div>
 
 </body>
-</html>
+</html><button onclick="confirmPayment()">Confirm Payment</button>
+
+<script>
+function confirmPayment() {
+    alert("Payment confirmed successfully!");
+    window.location.href = "dashboard.html";
+}
+</script>
